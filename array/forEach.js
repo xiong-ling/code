@@ -15,7 +15,7 @@ function forEach(array, callback, thisArg) {
 
     for (let i = 0; i < array.length; i++) {
         const value = array[i];
-        callback.call(thisArg, value, i, thisArg)
+        callback.call(thisArg, value, i, array)
     }
 }
 
