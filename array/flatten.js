@@ -15,14 +15,9 @@ function baseFlatten(array, depth, result = []) {
     // 遍历每一项
     while(++index < length) {
         const value = array[index];
-        if (Array.isArray(value)) {
+        if (Array.isArray(value) && depth > 0) {
             // 如果是数组并且depth > 0 就继续递归
-            if (depth > 0) {
-                baseFlatten(value, depth - 1, result)
-            } else {
-                // 不进行扁平，直接将数组push进去
-                result.push(value)
-            }
+            baseFlatten(value, depth - 1, result)
         } else {
             // 非数组，直接push
             result.push(value)
