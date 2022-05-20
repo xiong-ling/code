@@ -3,5 +3,5 @@
 
 - 常见编程题
     - [ ] [实现一个trim方法](./programming-problem/trim.js)
-
-
+- 实现的数组方法
+    - [ ] [实现一个flatten方法](./array/flatten.js)
