@@ -17,7 +17,7 @@ function reduce(array, callback, initValue) {
     // 遍历开始索引
     let index = initValue != undefined ? 0 : 1;
     // 遍历次数，没有 initValue 时，第一项 直接被赋值了，不需要遍历
-    const length = initValue != undefined ? array.length : array.length - 1;
+    const length = array.length;
 
     for (let i = index; i < length; i++) {
         const currentValue = array[i];
